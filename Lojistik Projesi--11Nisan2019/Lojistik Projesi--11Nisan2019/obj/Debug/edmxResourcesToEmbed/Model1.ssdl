@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Model1StoreContainer">
+    <EntitySet Name="ÜrünlerSet" EntityType="Model1.Store.ÜrünlerSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DepartmanSet" EntityType="Model1.Store.DepartmanSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PersonelSet" EntityType="Model1.Store.PersonelSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TaşıyıcıFirmaSet" EntityType="Model1.Store.TaşıyıcıFirmaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ÜreticiFirmaSet" EntityType="Model1.Store.ÜreticiFirmaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SevkiyatSet" EntityType="Model1.Store.SevkiyatSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AlıcıFirmaSet" EntityType="Model1.Store.AlıcıFirmaSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FirmalarSet" EntityType="Model1.Store.FirmalarSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="DepartmanPersonel" Association="Model1.Store.DepartmanPersonel">
+      <End Role="Departman" EntitySet="DepartmanSet" />
+      <End Role="Personel" EntitySet="PersonelSet" />
+    </AssociationSet>
+    <AssociationSet Name="FirmalarAlıcıFirma" Association="Model1.Store.FirmalarAlıcıFirma">
+      <End Role="Firmalar" EntitySet="FirmalarSet" />
+      <End Role="AlıcıFirma" EntitySet="AlıcıFirmaSet" />
+    </AssociationSet>
+    <AssociationSet Name="FirmalarTaşıyıcıFirma" Association="Model1.Store.FirmalarTaşıyıcıFirma">
+      <End Role="Firmalar" EntitySet="FirmalarSet" />
+      <End Role="TaşıyıcıFirma" EntitySet="TaşıyıcıFirmaSet" />
+    </AssociationSet>
+    <AssociationSet Name="FirmalarÜreticiFirma" Association="Model1.Store.FirmalarÜreticiFirma">
+      <End Role="Firmalar" EntitySet="FirmalarSet" />
+      <End Role="ÜreticiFirma" EntitySet="ÜreticiFirmaSet" />
+    </AssociationSet>
+    <AssociationSet Name="FirmalarDepartman" Association="Model1.Store.FirmalarDepartman">
+      <End Role="Firmalar" EntitySet="FirmalarSet" />
+      <End Role="Departman" EntitySet="DepartmanSet" />
+    </AssociationSet>
+    <AssociationSet Name="ÜrünlerSevkiyat" Association="Model1.Store.ÜrünlerSevkiyat">
+      <End Role="Ürünler" EntitySet="ÜrünlerSet" />
+      <End Role="Sevkiyat" EntitySet="SevkiyatSet" />
+    </AssociationSet>
+    <AssociationSet Name="FirmalarSevkiyat" Association="Model1.Store.FirmalarSevkiyat">
+      <End Role="Firmalar" EntitySet="FirmalarSet" />
+      <End Role="Sevkiyat" EntitySet="SevkiyatSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ÜrünlerSet">
+    <Key>
+      <PropertyRef Name="ÜrünID" />
+    </Key>
+    <Property Name="ÜrünID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ÜrünAdı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="StokMiktar" Type="int" Nullable="false" />
+    <Property Name="ÜrünTipi" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DepartmanSet">
+    <Key>
+      <PropertyRef Name="DeparmanID" />
+    </Key>
+    <Property Name="DeparmanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepartmanAdı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FirmalarFirmaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PersonelSet">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PersonlAdı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PersonelSoyadı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefon" Type="int" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DepartmanDeparmanID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaşıyıcıFirmaSet">
+    <Key>
+      <PropertyRef Name="TaşıyıcıFirmaID" />
+    </Key>
+    <Property Name="TaşıyıcıFirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefon" Type="int" Nullable="false" />
+    <Property Name="TaşımaŞekli" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FirmalarFirmaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ÜreticiFirmaSet">
+    <Key>
+      <PropertyRef Name="ÜreticiFirmaID" />
+    </Key>
+    <Property Name="ÜreticiFirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefon" Type="int" Nullable="false" />
+    <Property Name="FirmalarFirmaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SevkiyatSet">
+    <Key>
+      <PropertyRef Name="SevkiyatID" />
+    </Key>
+    <Property Name="SevkiyatID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SevkAdı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ülke" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ÜrünlerÜrünID" Type="int" Nullable="false" />
+    <Property Name="FirmalarFirmaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlıcıFirmaSet">
+    <Key>
+      <PropertyRef Name="AlıcıFirmaID" />
+    </Key>
+    <Property Name="AlıcıFirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adres" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefon" Type="int" Nullable="false" />
+    <Property Name="FirmalarFirmaID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FirmalarSet">
+    <Key>
+      <PropertyRef Name="FirmaID" />
+    </Key>
+    <Property Name="FirmaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirmaTipi" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="DepartmanPersonel">
+    <End Role="Departman" Type="Model1.Store.DepartmanSet" Multiplicity="1" />
+    <End Role="Personel" Type="Model1.Store.PersonelSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departman">
+        <PropertyRef Name="DeparmanID" />
+      </Principal>
+      <Dependent Role="Personel">
+        <PropertyRef Name="DepartmanDeparmanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FirmalarAlıcıFirma">
+    <End Role="Firmalar" Type="Model1.Store.FirmalarSet" Multiplicity="1" />
+    <End Role="AlıcıFirma" Type="Model1.Store.AlıcıFirmaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaID" />
+      </Principal>
+      <Dependent Role="AlıcıFirma">
+        <PropertyRef Name="FirmalarFirmaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FirmalarTaşıyıcıFirma">
+    <End Role="Firmalar" Type="Model1.Store.FirmalarSet" Multiplicity="1" />
+    <End Role="TaşıyıcıFirma" Type="Model1.Store.TaşıyıcıFirmaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaID" />
+      </Principal>
+      <Dependent Role="TaşıyıcıFirma">
+        <PropertyRef Name="FirmalarFirmaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FirmalarÜreticiFirma">
+    <End Role="Firmalar" Type="Model1.Store.FirmalarSet" Multiplicity="1" />
+    <End Role="ÜreticiFirma" Type="Model1.Store.ÜreticiFirmaSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaID" />
+      </Principal>
+      <Dependent Role="ÜreticiFirma">
+        <PropertyRef Name="FirmalarFirmaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FirmalarDepartman">
+    <End Role="Firmalar" Type="Model1.Store.FirmalarSet" Multiplicity="1" />
+    <End Role="Departman" Type="Model1.Store.DepartmanSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaID" />
+      </Principal>
+      <Dependent Role="Departman">
+        <PropertyRef Name="FirmalarFirmaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ÜrünlerSevkiyat">
+    <End Role="Ürünler" Type="Model1.Store.ÜrünlerSet" Multiplicity="1" />
+    <End Role="Sevkiyat" Type="Model1.Store.SevkiyatSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ürünler">
+        <PropertyRef Name="ÜrünID" />
+      </Principal>
+      <Dependent Role="Sevkiyat">
+        <PropertyRef Name="ÜrünlerÜrünID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FirmalarSevkiyat">
+    <End Role="Firmalar" Type="Model1.Store.FirmalarSet" Multiplicity="1" />
+    <End Role="Sevkiyat" Type="Model1.Store.SevkiyatSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Firmalar">
+        <PropertyRef Name="FirmaID" />
+      </Principal>
+      <Dependent Role="Sevkiyat">
+        <PropertyRef Name="FirmalarFirmaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model1StoreContainer" CdmEntityContainer="Model1Container">
+    <EntitySetMapping Name="ÜrünlerSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Ürünler)">
+        <MappingFragment StoreEntitySet="ÜrünlerSet">
+          <ScalarProperty Name="ÜrünID" ColumnName="ÜrünID" />
+          <ScalarProperty Name="ÜrünAdı" ColumnName="ÜrünAdı" />
+          <ScalarProperty Name="StokMiktar" ColumnName="StokMiktar" />
+          <ScalarProperty Name="ÜrünTipi" ColumnName="ÜrünTipi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartmanSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Departman)">
+        <MappingFragment StoreEntitySet="DepartmanSet">
+          <ScalarProperty Name="DeparmanID" ColumnName="DeparmanID" />
+          <ScalarProperty Name="DepartmanAdı" ColumnName="DepartmanAdı" />
+          <ScalarProperty Name="FirmalarFirmaID" ColumnName="FirmalarFirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonelSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Personel)">
+        <MappingFragment StoreEntitySet="PersonelSet">
+          <ScalarProperty Name="PersonelID" ColumnName="PersonelID" />
+          <ScalarProperty Name="PersonlAdı" ColumnName="PersonlAdı" />
+          <ScalarProperty Name="PersonelSoyadı" ColumnName="PersonelSoyadı" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="DepartmanDeparmanID" ColumnName="DepartmanDeparmanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaşıyıcıFirmaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.TaşıyıcıFirma)">
+        <MappingFragment StoreEntitySet="TaşıyıcıFirmaSet">
+          <ScalarProperty Name="TaşıyıcıFirmaID" ColumnName="TaşıyıcıFirmaID" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="TaşımaŞekli" ColumnName="TaşımaŞekli" />
+          <ScalarProperty Name="FirmalarFirmaID" ColumnName="FirmalarFirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ÜreticiFirmaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.ÜreticiFirma)">
+        <MappingFragment StoreEntitySet="ÜreticiFirmaSet">
+          <ScalarProperty Name="ÜreticiFirmaID" ColumnName="ÜreticiFirmaID" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="FirmalarFirmaID" ColumnName="FirmalarFirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SevkiyatSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Sevkiyat)">
+        <MappingFragment StoreEntitySet="SevkiyatSet">
+          <ScalarProperty Name="SevkiyatID" ColumnName="SevkiyatID" />
+          <ScalarProperty Name="SevkAdı" ColumnName="SevkAdı" />
+          <ScalarProperty Name="Ülke" ColumnName="Ülke" />
+          <ScalarProperty Name="ÜrünlerÜrünID" ColumnName="ÜrünlerÜrünID" />
+          <ScalarProperty Name="FirmalarFirmaID" ColumnName="FirmalarFirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlıcıFirmaSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.AlıcıFirma)">
+        <MappingFragment StoreEntitySet="AlıcıFirmaSet">
+          <ScalarProperty Name="AlıcıFirmaID" ColumnName="AlıcıFirmaID" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Telefon" ColumnName="Telefon" />
+          <ScalarProperty Name="FirmalarFirmaID" ColumnName="FirmalarFirmaID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FirmalarSet">
+      <EntityTypeMapping TypeName="IsTypeOf(Model1.Firmalar)">
+        <MappingFragment StoreEntitySet="FirmalarSet">
+          <ScalarProperty Name="FirmaID" ColumnName="FirmaID" />
+          <ScalarProperty Name="FirmaTipi" ColumnName="FirmaTipi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

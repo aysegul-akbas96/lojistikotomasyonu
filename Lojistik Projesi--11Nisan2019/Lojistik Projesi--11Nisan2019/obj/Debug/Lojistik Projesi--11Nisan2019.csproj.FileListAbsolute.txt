@@ -1,0 +1,24 @@
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\Lojistik Projesi--11Nisan2019.exe.config
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\Lojistik Projesi--11Nisan2019.exe
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\Lojistik Projesi--11Nisan2019.pdb
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\EntityFramework.dll
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\EntityFramework.xml
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.csprojResolveAssemblyReference.cache
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Form1.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Properties.Resources.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.csproj.GenerateResource.Cache
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.exe
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.pdb
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Alıcı.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.FirmaSeç.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Üretici.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Taşıyıcı.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Departmanlar.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Personeller.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.Ürün.resources
+C:\Users\smart.ogrenci\Desktop\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik_Projesi__11Nisan2019.sevk.resources
+C:\Users\smart.ogrenci\Desktop\AyşegülAkbaş\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\bin\Debug\Lojistik Projesi--11Nisan2019.exe.config
+C:\Users\smart.ogrenci\Desktop\AyşegülAkbaş\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.exe
+C:\Users\smart.ogrenci\Desktop\AyşegülAkbaş\Lojistik Projesi--11Nisan2019\Lojistik Projesi--11Nisan2019\obj\Debug\Lojistik Projesi--11Nisan2019.pdb
